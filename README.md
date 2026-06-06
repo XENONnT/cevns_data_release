@@ -29,12 +29,18 @@ The monoenergetic NR templates are used to build the solar neutrino and light da
 The wildcards are defined as follows:
 
 - `sr*` — distinguishes between science runs
-- `t_ly_*` and `t_qy_*` — correspond to the nuisance parameters modeling the light yield and charge yield uncertainties
-- `nr_*` — indicates the energy of the monoenergetic NR
+- `tly_*` and `tqy_*` — correspond to the nuisance parameters modeling the light yield and charge yield uncertainties
+- `mono_*` — indicates the energy of the monoenergetic NR
 
 ## Limits
 
 The 90% confidence level upper limits on the light-dark-matter particle–nucleon interaction cross section are stored in the `limits` folder.
+
+## License
+
+The data products in this repository are licensed under the Creative Commons Attribution 4.0 International License (CC-BY-4.0).
+
+If you use this data release, please cite the associated paper and this repository.
 
 ## References
 
