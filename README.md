@@ -1,4 +1,4 @@
-# XENONnT CE$`\nu`$NS Data Release
+This repository contains the XENONnT solar boron-8 neutrino and light dark matter searches data release, including post-selection data, binning definitions, likelihood templates, upper limit results, and example code. The provided monoenergetic nuclear recoil templates allow users to construct their own signal models by convolving them with custom nuclear recoil spectra.
 
 ## Data
 
@@ -19,10 +19,10 @@ An extended binned likelihood fit is performed. The bin edges for all four dimen
 
 The templates that build the four-dimensional likelihood are stored in the `templates` folder. There are four components:
 
-1. **Accidental coincidence (AC):** `templates/sr*/ac/template_XENONnT_sr*_ac_cevns.h5`
-2. **Electronic recoil (ER):** `templates/sr*/er/template_XENONnT_sr*_er_cevns.h5`
-3. **Neutron:** `templates/sr*/rg/template_XENONnT_sr*_rg_cevns_tly_*_tqy_*.h5`
-4. **Monoenergetic nuclear recoil (NR):** `templates/sr*/mono/template_XENONnT_sr*_mono_*_cevns_tly_*_tqy_*.h5`
+- **Accidental coincidence (AC):** `templates/sr*/ac/template_XENONnT_sr*_ac_cevns.h5`
+- **Electronic recoil (ER):** `templates/sr*/er/template_XENONnT_sr*_er_cevns.h5`
+- **Neutron:** `templates/sr*/rg/template_XENONnT_sr*_rg_cevns_tly_*_tqy_*.h5`
+- **Monoenergetic nuclear recoil (NR):** `templates/sr*/mono/template_XENONnT_sr*_mono_*_cevns_tly_*_tqy_*.h5`
 
 The monoenergetic NR templates are used to construct the solar neutrino and light dark matter templates, given their respective NR spectra. These templates are dimensionless and represent the detection efficiency. All other components are expressed in units of `/t/y`. The four-dimensional binned distribution for each component can be accessed through the `.histogram` attribute of the object returned by `inference_interface.template_to_multihist`.
 
