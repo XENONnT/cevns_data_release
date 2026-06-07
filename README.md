@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20576156.svg)](https://doi.org/10.5281/zenodo.20576156)
+
 This repository contains the XENONnT solar boron-8 neutrino and light dark matter searches data release, including post-selection data, binning definitions, likelihood templates, upper limit results, and example code. The provided monoenergetic nuclear recoil templates allow users to construct their own signal models by convolving them with custom nuclear recoil spectra.
 
 ## Data
