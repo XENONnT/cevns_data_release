@@ -24,7 +24,7 @@ The templates that build the four-dimensional likelihood are stored in the `temp
 3. **Neutron:** `templates/sr*/rg/template_XENONnT_sr*_rg_cevns_tly_*_tqy_*.h5`
 4. **Monoenergetic nuclear recoil (NR):** `templates/sr*/mono/template_XENONnT_sr*_mono_*_cevns_tly_*_tqy_*.h5`
 
-The monoenergetic NR templates are used to build the solar neutrino and light dark matter templates, given their respective NR spectra. These templates are dimensionless and represent the detection efficiency. All other components are in units of `/t/y`.
+The monoenergetic NR templates are used to construct the solar neutrino and light dark matter templates, given their respective NR spectra. These templates are dimensionless and represent the detection efficiency. All other components are expressed in units of `/t/y`. The four-dimensional binned distribution for each component can be accessed through the `.histogram` attribute of the object returned by `inference_interface.template_to_multihist`.
 
 The wildcards are defined as follows:
 
@@ -34,7 +34,11 @@ The wildcards are defined as follows:
 
 ## Limits
 
-The 90% confidence level upper limits on the light-dark-matter particle–nucleon interaction cross section are stored in the `limits` folder.
+The 90% confidence level upper limits on the light dark matter particle–nucleon interaction cross section are stored in the `limits` folder.
+
+## Example
+
+An example of reading data, binning, templates, and limits can be found in `plot.ipynb`.
 
 ## License
 
